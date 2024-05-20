@@ -18,19 +18,40 @@
         .btn:active {
             scale: 0.95;
         }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            text-transform: capitalize;
+            background: red;
+
+        }
+
+        h2 {
+            background: green;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .dark {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 30px;
+        }
     </style>
 </head>
 
 <body>
     <h1>js creating and git practice </h1>
     <h2>
-        the basic commends like
-        git init
-        git add .
-        git commit -m "message"
-        git branch -M main
-        git origin add file location
-        git push -u
+        the basic commends like <br>
+        git init <br>
+        git add . <br>
+        git commit -m "message" <br>
+        git branch -M main <br>
+        git origin add file location <br>
+        git push -u <br>
 
 
 
@@ -48,8 +69,10 @@
         </ul>
 
     </h3>
-    <button onclick="btn()" class="btn">open</button>
-    <button onclick="btn1()" class="btn">dark</button>
+    <div class="dark">
+        <button onclick="btn()" class="btn">dark</button>
+        <button onclick="btn1()" class="btn">light</button>
+    </div>
 
     <script>
         function btn() {
